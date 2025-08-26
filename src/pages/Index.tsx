@@ -1,16 +1,14 @@
-import { Header } from "@/components/Header";
 import { EbookForm } from "@/components/EbookForm";
 import { TestimonialCard } from "@/components/TestimonialCard";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { CheckCircle, Download, Users, Trophy, Clock, Star } from "lucide-react";
 import heroImage from "@/assets/hero-enem.jpg";
-import ebookCover from "@/assets/ebook-cover.png";
+import ebookCover from "@/assets/ebook-cover-generic.png";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Header />
       
       {/* Hero Section */}
       <section className="relative bg-gradient-hero overflow-hidden">
