@@ -1,14 +1,16 @@
 import { EbookForm } from "@/components/EbookForm";
 import { TestimonialCard } from "@/components/TestimonialCard";
+import { Header } from "@/components/Header";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { CheckCircle, Download, Users, Trophy, Clock, Star } from "lucide-react";
+import { CheckCircle, Download, Users, Trophy, Clock, Star, BookOpen } from "lucide-react";
 import heroImage from "@/assets/hero-enem.jpg";
 import ebookCover from "@/assets/books-stack.png";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Header />
       
       {/* Hero Section */}
       <section className="relative bg-gradient-hero overflow-hidden">
@@ -69,7 +71,7 @@ const Index = () => {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-8 sm:py-12 md:py-16 lg:py-20 bg-muted/30">
+      <section id="beneficios" className="py-8 sm:py-12 md:py-16 lg:py-20 bg-muted/30">
         <div className="container mx-auto px-3 sm:px-4">
           <div className="text-center mb-8 sm:mb-12 lg:mb-16">
             <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-2 sm:mb-3 md:mb-4 px-4">
@@ -81,7 +83,7 @@ const Index = () => {
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
-            <Card className="p-4 sm:p-6 lg:p-8 text-center hover:shadow-lg transition-shadow">
+            <Card className="p-4 sm:p-6 lg:p-8 text-center hover:shadow-lg transition-shadow hover:shadow-primary">
               <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
                 <Users className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
               </div>
@@ -91,7 +93,7 @@ const Index = () => {
               </p>
             </Card>
             
-            <Card className="p-4 sm:p-6 lg:p-8 text-center hover:shadow-lg transition-shadow">
+            <Card className="p-4 sm:p-6 lg:p-8 text-center hover:shadow-lg transition-shadow hover:shadow-secondary">
               <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-secondary rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
                 <Trophy className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
               </div>
@@ -101,8 +103,8 @@ const Index = () => {
               </p>
             </Card>
             
-            <Card className="p-4 sm:p-6 lg:p-8 text-center hover:shadow-lg transition-shadow sm:col-span-2 lg:col-span-1">
-              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
+            <Card className="p-4 sm:p-6 lg:p-8 text-center hover:shadow-lg transition-shadow hover:shadow-primary sm:col-span-2 lg:col-span-1">
+              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-accent rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
                 <Clock className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
               </div>
               <h3 className="text-base sm:text-lg md:text-xl font-semibold mb-2 sm:mb-3 md:mb-4">Resultados Rápidos</h3>
@@ -115,7 +117,7 @@ const Index = () => {
       </section>
 
       {/* Testimonials */}
-      <section className="py-8 sm:py-12 md:py-16 lg:py-20">
+      <section id="depoimentos" className="py-8 sm:py-12 md:py-16 lg:py-20">
         <div className="container mx-auto px-3 sm:px-4">
           <div className="text-center mb-8 sm:mb-12 lg:mb-16">
             <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-2 sm:mb-3 md:mb-4 px-4">
@@ -152,7 +154,7 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-8 sm:py-12 md:py-16 lg:py-20 bg-gradient-hero">
+      <section id="download" className="py-8 sm:py-12 md:py-16 lg:py-20 bg-gradient-hero">
         <div className="container mx-auto px-3 sm:px-4 text-center">
           <div className="max-w-3xl mx-auto text-white">
             <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 md:mb-6 px-4">

@@ -17,21 +17,25 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 220 25% 15%;
 
-    /* Luma Ensino Brand Colors - Professional Purple */
-    --primary: 262 90% 50%; /* Roxo institucional da Luma */
+    /* Luma Ensino Brand Colors - Authentic Palette */
+    --primary: 249 64% 53%; /* #6256A6 - Roxo principal da Luma */
     --primary-foreground: 0 0% 100%;
-    --primary-light: 262 75% 65%;
-    --primary-dark: 262 90% 35%;
+    --primary-light: 249 52% 65%; /* #442C8B - Roxo médio */
+    --primary-dark: 249 72% 29%; /* #33256A - Roxo escuro */
 
     /* Luma Ensino Brand Colors - Secondary */
-    --secondary: 45 93% 58%; /* Amarelo complementar */
+    --secondary: 69 76% 52%; /* #B2D235 - Verde vibrante */
     --secondary-foreground: 0 0% 15%;
-    --secondary-light: 45 85% 70%;
+    --secondary-light: 51 86% 60%; /* #F5D944 - Amarelo complementar */
+    
+    /* Luma Ensino Brand Colors - Accent */
+    --accent-cyan: 187 70% 52%; /* #4CC0AD - Verde azulado */
+    --accent-blue: 187 76% 53%; /* #3EC2CF - Azul claro */
 
     --muted: 220 15% 96%;
     --muted-foreground: 220 10% 45%;
 
-    --accent: 45 93% 58%;
+    --accent: 69 76% 52%; /* Verde Luma */
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
@@ -39,14 +43,15 @@ All colors MUST be HSL.
 
     --border: 220 20% 90%;
     --input: 220 20% 95%;
-    --ring: 262 90% 50%;
+    --ring: 249 64% 53%;
 
     /* Custom Luma Brand Variables */
-    --gradient-primary: linear-gradient(135deg, hsl(262 90% 50%), hsl(262 75% 65%));
-    --gradient-secondary: linear-gradient(135deg, hsl(45 93% 58%), hsl(45 85% 70%));
-    --gradient-hero: linear-gradient(135deg, hsl(262 90% 50%), hsl(262 90% 35%), hsl(262 80% 25%));
-    --shadow-primary: 0 10px 30px -5px hsl(262 90% 50% / 0.3);
-    --shadow-secondary: 0 10px 30px -5px hsl(45 93% 58% / 0.3);
+    --gradient-primary: linear-gradient(135deg, hsl(249 64% 53%), hsl(249 52% 65%));
+    --gradient-secondary: linear-gradient(135deg, hsl(69 76% 52%), hsl(51 86% 60%));
+    --gradient-hero: linear-gradient(135deg, hsl(249 64% 53%), hsl(249 72% 29%), hsl(249 80% 20%));
+    --gradient-accent: linear-gradient(135deg, hsl(187 70% 52%), hsl(187 76% 53%));
+    --shadow-primary: 0 10px 30px -5px hsl(249 64% 53% / 0.3);
+    --shadow-secondary: 0 10px 30px -5px hsl(69 76% 52% / 0.3);
 
     --radius: 0.5rem;
 
@@ -77,19 +82,22 @@ All colors MUST be HSL.
     --popover: 220 25% 10%;
     --popover-foreground: 0 0% 95%;
 
-    --primary: 262 75% 65%;
+    --primary: 249 52% 65%;
     --primary-foreground: 0 0% 100%;
-    --primary-light: 262 60% 80%;
-    --primary-dark: 262 75% 50%;
+    --primary-light: 249 40% 75%;
+    --primary-dark: 249 64% 53%;
 
-    --secondary: 45 88% 65%;
+    --secondary: 69 66% 62%;
     --secondary-foreground: 0 0% 10%;
-    --secondary-light: 45 80% 75%;
+    --secondary-light: 51 76% 70%;
+    
+    --accent-cyan: 187 60% 62%;
+    --accent-blue: 187 66% 63%;
 
     --muted: 220 25% 15%;
     --muted-foreground: 220 10% 65%;
 
-    --accent: 45 88% 65%;
+    --accent: 69 66% 62%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 75% 55%;
@@ -97,13 +105,14 @@ All colors MUST be HSL.
 
     --border: 220 25% 20%;
     --input: 220 25% 15%;
-    --ring: 262 75% 65%;
+    --ring: 249 52% 65%;
 
-    --gradient-primary: linear-gradient(135deg, hsl(262 75% 65%), hsl(262 60% 80%));
-    --gradient-secondary: linear-gradient(135deg, hsl(45 88% 65%), hsl(45 80% 75%));
-    --gradient-hero: linear-gradient(135deg, hsl(262 75% 65%), hsl(262 75% 50%), hsl(262 65% 40%));
-    --shadow-primary: 0 10px 30px -5px hsl(262 75% 65% / 0.4);
-    --shadow-secondary: 0 10px 30px -5px hsl(45 88% 65% / 0.4);
+    --gradient-primary: linear-gradient(135deg, hsl(249 52% 65%), hsl(249 40% 75%));
+    --gradient-secondary: linear-gradient(135deg, hsl(69 66% 62%), hsl(51 76% 70%));
+    --gradient-hero: linear-gradient(135deg, hsl(249 52% 65%), hsl(249 64% 53%), hsl(249 72% 40%));
+    --gradient-accent: linear-gradient(135deg, hsl(187 60% 62%), hsl(187 66% 63%));
+    --shadow-primary: 0 10px 30px -5px hsl(249 52% 65% / 0.4);
+    --shadow-secondary: 0 10px 30px -5px hsl(69 66% 62% / 0.4);
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;

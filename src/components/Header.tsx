@@ -1,15 +1,46 @@
-import lumaLogo from "@/assets/luma-logo.png";
+import lumaLogoDark from "@/assets/luma-logo-dark.png";
+import lumaLogoWhite from "@/assets/luma-logo-white.png";
 
 export function Header() {
   return (
-    <header className="bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b sticky top-0 z-50">
-      <div className="container mx-auto px-3 sm:px-4 py-2 sm:py-3 md:py-4">
-        <div className="flex items-center justify-center">
-          <img 
-            src={lumaLogo} 
-            alt="Luma Ensino" 
-            className="h-6 sm:h-8 md:h-10 lg:h-12 w-auto"
-          />
+    <header className="bg-background/95 backdrop-blur-sm border-b border-border sticky top-0 z-50">
+      <div className="container mx-auto px-3 sm:px-4 py-3 sm:py-4">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center">
+            {/* Logo for light mode */}
+            <img 
+              src={lumaLogoDark} 
+              alt="Luma Ensino" 
+              className="h-8 sm:h-10 md:h-12 w-auto dark:hidden"
+            />
+            {/* Logo for dark mode */}
+            <img 
+              src={lumaLogoWhite} 
+              alt="Luma Ensino" 
+              className="h-8 sm:h-10 md:h-12 w-auto hidden dark:block"
+            />
+          </div>
+          
+          <nav className="hidden md:flex items-center space-x-6 lg:space-x-8">
+            <a 
+              href="#beneficios" 
+              className="text-sm lg:text-base text-muted-foreground hover:text-primary transition-colors"
+            >
+              Benefícios
+            </a>
+            <a 
+              href="#depoimentos" 
+              className="text-sm lg:text-base text-muted-foreground hover:text-primary transition-colors"
+            >
+              Depoimentos
+            </a>
+            <a 
+              href="#download" 
+              className="text-sm lg:text-base bg-gradient-primary text-primary-foreground px-4 py-2 rounded-lg hover:shadow-primary transition-all"
+            >
+              Download Gratuito
+            </a>
+          </nav>
         </div>
       </div>
     </header>
