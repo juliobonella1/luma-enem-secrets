@@ -43,7 +43,7 @@ export function EbookForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4 w-full max-w-md">
+    <form onSubmit={handleSubmit} className="space-y-3 sm:space-y-4 w-full max-w-md">
       <div>
         <Input
           type="text"
@@ -52,7 +52,7 @@ export function EbookForm() {
           value={formData.name}
           onChange={handleChange}
           required
-          className="h-12"
+          className="h-11 sm:h-12 text-base"
         />
       </div>
       <div>
@@ -63,7 +63,7 @@ export function EbookForm() {
           value={formData.email}
           onChange={handleChange}
           required
-          className="h-12"
+          className="h-11 sm:h-12 text-base"
         />
       </div>
       <div>
@@ -73,7 +73,7 @@ export function EbookForm() {
           placeholder="Seu WhatsApp (opcional)"
           value={formData.phone}
           onChange={handleChange}
-          className="h-12"
+          className="h-11 sm:h-12 text-base"
         />
       </div>
       <Button
@@ -81,11 +81,11 @@ export function EbookForm() {
         variant="hero"
         size="lg"
         disabled={isSubmitting}
-        className="w-full h-12"
+        className="w-full h-11 sm:h-12 text-sm sm:text-base font-bold"
       >
         {isSubmitting ? "Enviando..." : "BAIXAR E-BOOK GRATUITO"}
       </Button>
-      <p className="text-xs text-muted-foreground text-center">
+      <p className="text-xs text-muted-foreground text-center leading-relaxed px-2">
         Ao clicar no botão, você concorda em receber comunicações da Luma Ensino.
       </p>
     </form>
