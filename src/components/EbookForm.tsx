@@ -43,7 +43,7 @@ export function EbookForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-3 sm:space-y-4 w-full max-w-md">
+    <form onSubmit={handleSubmit} className="space-y-3 sm:space-y-4 w-full max-w-xs sm:max-w-md">
       <div>
         <Input
           type="text"
@@ -52,7 +52,7 @@ export function EbookForm() {
           value={formData.name}
           onChange={handleChange}
           required
-          className="h-11 sm:h-12 text-base"
+          className="h-10 sm:h-11 md:h-12 text-sm sm:text-base bg-white/90 border-white/20 text-gray-900 placeholder:text-gray-600 focus:bg-white"
         />
       </div>
       <div>
@@ -63,7 +63,7 @@ export function EbookForm() {
           value={formData.email}
           onChange={handleChange}
           required
-          className="h-11 sm:h-12 text-base"
+          className="h-10 sm:h-11 md:h-12 text-sm sm:text-base bg-white/90 border-white/20 text-gray-900 placeholder:text-gray-600 focus:bg-white"
         />
       </div>
       <div>
@@ -73,7 +73,7 @@ export function EbookForm() {
           placeholder="Seu WhatsApp (opcional)"
           value={formData.phone}
           onChange={handleChange}
-          className="h-11 sm:h-12 text-base"
+          className="h-10 sm:h-11 md:h-12 text-sm sm:text-base bg-white/90 border-white/20 text-gray-900 placeholder:text-gray-600 focus:bg-white"
         />
       </div>
       <Button
@@ -81,7 +81,7 @@ export function EbookForm() {
         variant="hero"
         size="lg"
         disabled={isSubmitting}
-        className="w-full h-11 sm:h-12 text-sm sm:text-base font-bold"
+        className="w-full h-10 sm:h-11 md:h-12 text-xs sm:text-sm md:text-base font-bold"
       >
         {isSubmitting ? "Enviando..." : "BAIXAR E-BOOK GRATUITO"}
       </Button>
