@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { CheckCircle, Download, Users, Trophy, Clock, Star } from "lucide-react";
 import heroImage from "@/assets/hero-enem.jpg";
-import ebookCover from "@/assets/book-cover.png";
+import ebookCover from "@/assets/books-stack.png";
 
 const Index = () => {
   return (
