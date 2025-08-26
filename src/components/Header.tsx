@@ -3,7 +3,7 @@ import lumaLogoWhite from "@/assets/luma-logo-white.png";
 
 export function Header() {
   return (
-    <header className="backdrop-blur-md border-b border-border/30 sticky top-0 z-50 transition-all duration-300">
+    <header className="bg-background/70 backdrop-blur-md border-b border-border/50 sticky top-0 z-50 transition-all duration-300">
       <div className="container mx-auto px-3 sm:px-4 py-3 sm:py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
