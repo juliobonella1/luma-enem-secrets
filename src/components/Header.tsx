@@ -8,34 +8,34 @@ export function Header() {
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             {/* Logo for light mode */}
-            <img 
-              src={lumaLogoDark} 
-              alt="Luma Ensino" 
+            {/* <img
+              src={lumaLogoDark}
+              alt="Luma Ensino"
               className="h-8 sm:h-10 md:h-12 w-auto dark:hidden"
-            />
+            /> */}
             {/* Logo for dark mode */}
-            <img 
-              src={lumaLogoWhite} 
-              alt="Luma Ensino" 
+            {/* <img
+              src={lumaLogoWhite}
+              alt="Luma Ensino"
               className="h-8 sm:h-10 md:h-12 w-auto hidden dark:block"
-            />
+            /> */}
           </div>
-          
+
           <nav className="hidden md:flex items-center space-x-6 lg:space-x-8">
-            <a 
-              href="#beneficios" 
+            <a
+              href="#beneficios"
               className="text-sm lg:text-base text-muted-foreground hover:text-primary transition-colors"
             >
               Benefícios
             </a>
-            <a 
-              href="#depoimentos" 
+            <a
+              href="#depoimentos"
               className="text-sm lg:text-base text-muted-foreground hover:text-primary transition-colors"
             >
               Depoimentos
             </a>
-            <a 
-              href="#download" 
+            <a
+              href="#download"
               className="text-sm lg:text-base bg-gradient-primary text-primary-foreground px-4 py-2 rounded-lg hover:shadow-primary transition-all"
             >
               Download Gratuito
