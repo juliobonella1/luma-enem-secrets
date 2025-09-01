@@ -10,10 +10,7 @@ import {
   Trophy,
   Clock,
   Star,
-  BookOpen,
 } from "lucide-react";
-import heroImage from "@/assets/hero-enem.jpg";
-import ebookCover from "@/assets/books-stack.png";
 
 const Index = () => {
   return (

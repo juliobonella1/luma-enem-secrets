@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
+import axios, { Axios } from "axios";
 
 export function EbookForm() {
   const [formData, setFormData] = useState({
@@ -18,10 +19,14 @@ export function EbookForm() {
 
     // Simulate form submission
     try {
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      await axios.post(
+        "https://n8n-luma-n8n-teste.5ucjhf.easypanel.host/webhook/ec176c96-bcee-4546-8535-dd3fd5793529",
+        formData
+      );
       toast({
         title: "Sucesso!",
-        description: "E-book enviado para seu email. Verifique sua caixa de entrada.",
+        description:
+          "E-book enviado para seu email. Verifique sua caixa de entrada.",
       });
       setFormData({ name: "", email: "", phone: "" });
     } catch (error) {
@@ -36,14 +41,17 @@ export function EbookForm() {
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     }));
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-3 sm:space-y-4 w-full max-w-xs sm:max-w-md">
+    <form
+      onSubmit={handleSubmit}
+      className="space-y-3 sm:space-y-4 w-full max-w-xs sm:max-w-md"
+    >
       <div>
         <Input
           type="text"
@@ -86,7 +94,8 @@ export function EbookForm() {
         {isSubmitting ? "Enviando..." : "BAIXAR E-BOOK GRATUITO"}
       </Button>
       <p className="text-xs text-muted-foreground text-center leading-relaxed px-2">
-        Ao clicar no botão, você concorda em receber comunicações da Luma Ensino.
+        Ao clicar no botão, você concorda em receber comunicações da Luma
+        Ensino.
       </p>
     </form>
   );
