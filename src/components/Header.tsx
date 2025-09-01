@@ -1,5 +1,5 @@
-import lumaLogoDark from "@/assets/luma-logo-dark.png";
-import lumaLogoWhite from "@/assets/luma-logo-white.png";
+import lumaLogoDark from "@/assets/favicon.png";
+import lumaLogoWhite from "@/assets/favicon.png";
 
 export function Header() {
   return (
@@ -8,17 +8,17 @@ export function Header() {
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             {/* Logo for light mode */}
-            {/* <img
+            <img
               src={lumaLogoDark}
               alt="Luma Ensino"
               className="h-8 sm:h-10 md:h-12 w-auto dark:hidden"
-            /> */}
+            />
             {/* Logo for dark mode */}
-            {/* <img
+            <img
               src={lumaLogoWhite}
               alt="Luma Ensino"
               className="h-8 sm:h-10 md:h-12 w-auto hidden dark:block"
-            /> */}
+            />
           </div>
 
           <nav className="hidden md:flex items-center space-x-6 lg:space-x-8">
